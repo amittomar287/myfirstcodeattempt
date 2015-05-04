@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/txt_radius_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="Location Radius"
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/spinner_radius_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_select_icon"
+            android:layout_toRightOf="@+id/txt_radius_setting" />
+
+        <TextView 
+            android:id="@+id/txt_defalt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_radius_setting"
+            android:text="Default Email"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="5dip"
+            android:textSize="17sp"
+            />
+        
+        <EditText 
+            android:id="@+id/edt_default_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_below="@+id/spinner_radius_setting"
+            android:hint="Enter Your EmailId"
+            android:layout_toRightOf="@+id/txt_radius_setting"
+            />
+        
+        <Button
+            android:id="@+id/btn_save_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_default_email"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/txt_radius_setting"
+            android:text="Submit" />
+    </RelativeLayout>
+
+</ScrollView>
